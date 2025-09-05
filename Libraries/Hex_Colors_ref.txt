@@ -1,0 +1,18 @@
+//Hex_Color
+
+* RED: #ff0000
+* Gummie_Red: #e60000
+* Dark_Chrimson_Red: #640000
+* Bright_Pink_Red: #ff8282
+
+* GREEN: #00ff00
+* Candy_Emeral_Green: #00c81e
+* Dark_Bog_Green: #007d14
+* Bright_Froffy_Green: #a0ffa0
+
+* BLUE: #0000ff
+* Electric_Blue_Boogalue: #1919ff
+* Dark_Navy_Blue: #000032
+* Lavender_Blue: #aaaaff
+
+* GREY: #646464
