@@ -1,0 +1,74 @@
+html
+{
+    cursor: url(../Images/UI/Arrow_Head.svg), auto;
+}
+
+li :hover
+{
+    cursor: url(../Images/UI/Pointer_Hand.svg), auto;
+}
+
+/*-----{Properties}-----*/
+
+@property --Electric_Blue_Boogalue
+{
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #1919ff;
+}
+
+/*-----{Content_Block_Features}-----*/
+
+.Content_Block_Layout
+{
+    display: grid;
+
+    grid-template-areas: 
+    "B A A"
+    "B C C"
+    "B D D";
+
+    align-items: center;
+
+    gap: 5%;
+
+    padding: 5%;
+}
+
+.Aero_Button:hover
+{
+    cursor: url(../Images/UI/Pointer_Hand.svg), auto;
+
+    border: 2.5px, solid,  var(--Electric_Blue_Boogalue);
+
+    background: linear-gradient(to top, rgb(50, 5, 180) 0%, var(--Electric_Blue_Boogalue) 80%);
+
+    animation-name: Mouse_OnEnter;
+
+    animation-duration: .5s;
+
+    animation-fill-mode: forwards;
+}
+
+.Aero_Button:not(:hover)
+{
+    animation-name: Mouse_OnExit;
+
+    animation-duration: .5s;
+
+    animation-fill-mode: forwards;
+}
+
+@keyframes Mouse_OnEnter
+{
+    0%{}
+
+    100%{box-shadow:  0px 0px 10px var(--Electric_Blue_Boogalue);}
+}
+
+@keyframes Mouse_OnExit
+{
+    0%{box-shadow:  0px 0px 10px var(--Electric_Blue_Boogalue);}
+
+    100%{}
+}

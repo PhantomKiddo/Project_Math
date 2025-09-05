@@ -1,0 +1,385 @@
+/*}--------------------{BoxCS}--------------------{*/
+
+/*
+    Summary: Box Custom Sheet or BoxCS is a css framework that focus on taking care of the layout in separtate file
+    while the developers focus on creating style in another file, this help keeping the file light weight and less 
+    bloated in the files.
+*/
+
+/*}-----+-----====================-----+-----{*/
+/*}--------------------{}--------------------{*/
+/*}-----+-----====================-----+-----{*/
+
+/*Summary: */
+/*Note: */
+
+
+
+/*}-----+-----====================-----+-----{*/
+/*}--------------------{Horizonatal & Vertical div}--------------------{*/
+/*}-----+-----====================-----+-----{*/
+
+/*Summary: Flex display directions horizontal or vertical.*/
+/*Note: */
+
+.H-div-Tracks
+{
+    
+    display: flex;
+    flex-direction: row;
+    
+    align-items: center;
+}
+
+.V-div-Ladder
+{
+    
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+}
+
+/*}-----+-----====================-----+-----{*/
+/*}--------------------{Flex Features}--------------------{*/
+/*}-----+-----====================-----+-----{*/
+
+/*Summary: */
+/*Note: */
+
+.Flex-item-Left
+{
+    align-items: flex-start;
+}
+
+.Flex-item-Right
+{
+    align-items: flex-end;
+}
+
+.Between
+{
+    justify-content: space-between;
+}
+
+.Around
+{
+    justify-content: space-around;
+}
+
+.Evenly
+{
+    justify-content: space-evenly;
+}
+
+/*}-----+-----====================-----+-----{*/
+/*}--------------------{Box Template}--------------------{*/
+/*}-----+-----====================-----+-----{*/
+
+/*Summary: Non Destructive templates.*/
+/*Note: */
+
+.Box
+{
+    background-color: blueviolet;
+
+    /*Width&Height*/
+
+    width: 100px;
+    height: 100%;
+
+}
+
+.H-Card
+{
+    background-color: blueviolet;
+
+    /*Width&Height*/
+
+    width: 0%;
+    height: 0%;
+
+}
+
+.V-Card
+{
+    background-color: blueviolet;
+
+    /*Width&Height*/
+
+    width: 0%;
+    height: 0%;
+
+}
+
+.Slab
+{
+    background-color: blueviolet;
+
+    /*Width&Height*/
+
+    width: var(--100);
+    height: var(--Value-150);
+
+}
+
+.BillBoard
+{
+    background-color: transparent;
+
+    /*Width&Height*/
+
+    width: 100%;
+    height: 100%;
+
+}
+
+/*}-----+-----====================-----+-----{*/
+/*}--------------------{Anchor Position}--------------------{*/
+/*}-----+-----====================-----+-----{*/
+
+/*Summary: Anchor points in all 9 directions.*/
+/*Note: */
+
+.TOP_LEFT
+{
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.TOP_CENTER
+{
+    display: flex;
+    justify-content: center;
+
+}
+
+.TOP_RIGHT
+{
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.CENTER_LEFT
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+
+.CENTER
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.CENTER_RIGHT
+{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+.BOTTOM_LEFT
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+
+}
+
+.BOTTOM_CENTER
+{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+}
+
+.BOTTOM_RIGHT
+{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+}
+
+/*}-----+-----====================-----+-----{*/
+/*}--------------------{Spacers}--------------------{*/
+/*}-----+-----====================-----+-----{*/
+
+/*Summary: Hidden Spacers that need to take up space.*/
+/*Note: */
+
+.Spacer-100
+{
+    background-color: transparent;
+    height: 100px;
+
+}
+
+.Spacer-200
+{
+    background-color: transparent;
+    height: 200px;
+
+}
+
+.Spacer-300
+{
+    background-color: transparent;
+    height: 300px;
+
+}
+
+.Spacer-400
+{
+    background-color: transparent;
+    height: 400px;
+
+}
+
+.Spacer-500
+{
+    background-color: transparent;
+    height: 500px;
+
+}
+
+/*}-----+-----====================-----+-----{*/
+/*}--------------------{Margin Spacers}--------------------{*/
+/*}-----+-----====================-----+-----{*/
+
+/*Summary: Focusing on spacing inbetween.*/
+/*Note: */
+
+.Margin_Flatline
+{
+    margin: 0%;
+}
+
+.Margin_Center
+{
+    margin: auto;
+}
+
+.H-Margin-10
+{
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+.H-Margin-20
+{
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+
+.H-Margin-25
+{
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.V-Margin-10
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+.V-Margin-20
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.V-Margin-25
+{
+    margin-top: 25px;
+    margin-bottom: 25px;
+
+}
+
+/*}-----+-----====================-----+-----{*/
+/*}--------------------{Word Size}--------------------{*/
+/*}-----+-----====================-----+-----{*/
+
+/*Summary: Font Scale Templates to reduce the complication of all fonts.*/
+/*Note: */
+
+.P-10
+{
+
+    font-size: 10px;
+    
+}
+
+.P-15
+{
+
+    font-size: 15px;
+
+}
+
+.P-20
+{
+ 
+    font-size: 20px;
+
+}
+
+.P-25
+{
+ 
+    font-size: 25px;
+
+}
+
+.P-30
+{
+ 
+    font-size: 30px;
+
+}
+
+.P-40
+{
+
+    font-size: 40px;
+
+}
+
+.P-60
+{
+
+    font-size: 60px;
+
+}
+
+/*}-----+-----====================-----+-----{*/
+/*}--------------------{Test trinkets}--------------------{*/
+/*}-----+-----====================-----+-----{*/
+
+/*Summary: Hidden feature that need to be tested before making into live emmet.*/
+/*Note: */
+
+.Grid_A{grid-area: A;}
+
+.Grid_B{grid-area: B;}
+
+.Grid_C{grid-area: C;}
+
+.Grid_D{grid-area: D;}
+
+.Grid_E{grid-area: E;}
+

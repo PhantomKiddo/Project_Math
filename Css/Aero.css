@@ -1,0 +1,164 @@
+/*-----{Properties}-----*/
+
+@property --Candy_Emerald_Green
+{
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #00c81e;
+}
+
+/*-----{Tags}-----*/
+
+html
+{
+    background-color: darkgray;
+    
+    background-image: url(../Images/Background/Frutiger_Background.gif);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+header
+{
+    background: linear-gradient(to top, #00c81e 0%, #646464 25%);
+
+    height: 200px;
+    width: 100%;
+
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+
+    z-index: 1;
+}
+
+footer
+{
+    background: linear-gradient(to Bottom, #00c81e 0%, #646464 75%);
+
+    height: 100px;
+    width: 100%;
+
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+
+    z-index: 1;
+}
+
+li
+{
+    list-style: none;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+/*-----{Classes}-----*/
+
+.WhiteText{color: white;}
+
+.Glass
+{
+    background: linear-gradient(to left, rgba(0,125,20, 0.5) 0%, transparent 10%, transparent 90%, rgba(0,125,20, 0.5) 100%);
+
+    width: 60%;
+
+    backdrop-filter: blur(5px);
+    
+    box-shadow: 0px 0px 10px 15px rgba(0, 0, 0, 0.5);
+}
+
+.Content_Block
+{
+    background-color: rgba(255, 255, 255, 0.5);
+
+    margin: 25px;
+
+    border-radius: 25px;
+    
+    border: 2.5px, solid, rgb(190, 190, 190);
+    
+}
+
+.Aero_Button
+{
+    color: white;
+
+    background: linear-gradient(to top, rgba(50, 150, 50, 1) 0%, rgba(100, 255, 100, 1) 80%);
+    
+    padding: 2.5%;
+
+    border-radius: 25px;
+
+    border: 2.5px, solid, rgba(50, 150, 50, 1);
+
+
+}
+
+.Banner
+{
+    background: linear-gradient(to top, rgba(50, 150, 50, 1) 0%, rgba(100, 255, 100, 1) 80%);
+
+    height: 50px;
+
+    width: 100%;
+}
+/*-----{I_Cards Attributes}-----*/
+
+.I_Card_Main
+{
+    background-color: transparent;
+
+    width: 80%;
+    height: 80em;
+
+    margin: auto;
+}
+
+.I_Card_Top
+{
+    background-color: lightgrey;
+
+    height: 5%;
+
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+}
+
+.I_Card_Center
+{
+    background-color: lightgrey;
+
+    height: 20%;
+}
+
+.I_Card_Content
+{
+    background-color: grey;
+
+    height: 90%;
+    width: 90%;
+
+    border-radius: 50px;
+
+    display: grid;
+
+    grid-template-areas: 
+    ". . ."
+    ". . ."
+    "B B B";
+}
+
+.I_Card_Bottom
+{
+    background-color: lightgrey;
+
+    height: 5%;
+    
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
