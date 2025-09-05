@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="9.9989738in"
+   height="6.6816025in"
+   viewBox="0 0 959.90149 641.43384"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="Earth.svg"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="in"
+     inkscape:zoom="1.2261675"
+     inkscape:cx="479.95074"
+     inkscape:cy="320.91864"
+     inkscape:window-width="1920"
+     inkscape:window-height="1094"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer2" />
+  <defs
+     id="defs1">
+    <linearGradient
+       id="swatch10">
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="0"
+         id="stop10" />
+    </linearGradient>
+  </defs>
+  <g
+     id="layer2"
+     style="display:inline"
+     transform="translate(-48.04924,-87.097717)"
+     inkscape:label="Earth"
+     inkscape:highlight-color="#138526">
+    <path
+       id="path5"
+       style="display:none;fill:none;stroke:#1b8023;stroke-width:19.2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       d="M 685.20069,191.63183 528.00001,77.418848 370.79933,191.63182 m 208.21468,146.15341 31.5284,97.03442 M 528,494.79022 610.54241,434.81965 782.35604,490.6453 722.31072,675.44577 H 527.99999 L 528,494.79022 445.45759,434.81966 M 273.64396,490.64528 213.59865,305.8448 370.79933,191.63182 l 106.18666,146.15342 -31.5284,97.03442 -171.81363,55.82562 60.04531,184.80048 194.31072,1e-5 m -51.014,-337.66053 102.02802,-10e-6 106.18668,-146.1534 157.20067,114.21299 -60.04532,184.80048" />
+    <path
+       id="path2-9"
+       style="display:inline;fill:none;stroke:#138526;stroke-width:19.2;stroke-linecap:butt;stroke-linejoin:bevel;stroke-dasharray:none;stroke-opacity:1"
+       d="M 337.31212,583.99541 528.00002,189.70218 718.68792,583.9954 M 623.34396,386.84878 705.25085,91.897716 909.37581,445.45254 m -762.75157,10e-6 L 350.7492,91.897737 432.65608,386.84879 M 1002.4435,388.37794 528.00003,720.6683 53.556479,388.37796" />
+  </g>
+</svg>
