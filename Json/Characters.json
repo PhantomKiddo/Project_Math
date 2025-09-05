@@ -1,0 +1,68 @@
+{
+    "Character":
+    {
+        "Esmeralda":
+        {
+            "Name":"Esmeralda",
+            
+            "User": 304,
+            "Elemental": "Fire",
+            "Speed": 4.5,
+
+            "Strength": 8,
+            "Dexterity": 6,
+            "Constitution": 7,
+            "Inteligents": 5,
+            "Wisdom": 5,
+            "Charisma": 3,
+
+            "Zodiac": "Aries",
+            "Age": "21",
+            "Font": "Helvetica",
+            "Nationality": "Honduras",
+            "Sex": "Female"
+        },
+        "Kaleb":
+        {
+            "Name":"Kaleb",
+
+            "User": 305,
+            "Elemental": "Water",
+            "Speed": 5,
+
+            "Strength": 4,
+            "Dexterity": 7,
+            "Constitution": 4,
+            "Inteligents": 8,
+            "Wisdom": 5,
+            "Charisma": 7,
+            
+            "Zodiac": "Leo",
+            "Age": "20",
+            "Font": "Times New Roman",
+            "Nationality": "Argentina",
+            "Sex": "Male"
+        },
+        "Mikey":
+        {
+            "Name":"Mikey",
+
+            "User": 306,
+            "Elemental": "Earth",
+            "Speed": 3,
+
+            "Strength": 8,
+            "Dexterity": 6,
+            "Constitution": 8,
+            "Inteligents": 5,
+            "Wisdom": 5,
+            "Charisma": 2,
+
+            "Zodiac": "Taurus",
+            "Age": "23",
+            "Font": "Tahoma",
+            "Nationality": "American",
+            "Sex": "Male"
+        }
+    }
+}
