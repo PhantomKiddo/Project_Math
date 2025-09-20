@@ -4,8 +4,8 @@ const MainContent = "Json/Comics.Json";
 
 //Google Sheet QueryFetching
 const Sheet_ID = '1p-rgPuLOUqB8Vn8T8oMkgB7Zcvmjv6LcqiYdSzt_bwU';
-const Sheet_Name = encodeURIComponent('Project_Math()_Js_Query_Post');
-const Sheet_Range = 'B3:E20';
+const Sheet_Name = encodeURIComponent('Library');
+const Sheet_Range = 'B3:F20';
 
 const _URL = 'https://docs.google.com/spreadsheets/d/' + Sheet_ID + '/gviz/tq?sheet=' + Sheet_Name + '&range=' + Sheet_Range;
 
@@ -14,11 +14,8 @@ fetch(_URL)
 .then((URL_Data) => 
 {
 
-
     //Parsing Google Sheet for raw data.
     let data = JSON.parse(URL_Data.substr(47).slice(0,-2));
-
-
 
     if(document.getElementById('Main_Post'))
     {
@@ -41,32 +38,31 @@ fetch(_URL)
             Description.className = "Grid_C";
             Description.textContent = data.table.rows[i].c[1].v;
 
+            //Date
+            const Date = document.createElement('p');
+            Date.className = "Grid_E";
+            Date.textContent = data.table.rows[i].c[2].v
+
+
+
             //Housing for the buttons
             const Btn_Layout = document.createElement('div');
             Btn_Layout.className = "Grid_D H-div-Tracks Evenly";
+
+
 
             //Button_1
             const Button1 = document.createElement('button');
             Button1.className = "Aero_Button";
             const BntTxt1 = document.createElement('h2'); 
-            BntTxt1.textContent = "Go to Comics";
+            BntTxt1.textContent = "Read";
             Button1.append(BntTxt1);
+
             //JumpLink
-            Button1.onclick = () => window.location.href = 'Library.html'
-
-
-
-            //Button_2
-            const Button2 = document.createElement('button');
-            Button2.className = "Aero_Button";
-            const BntTxt2 = document.createElement('h2'); 
-            BntTxt2.textContent = "Go to Forums";
-            Button2.append(BntTxt2);
-
-
+            Button1.setAttribute('onclick', 'JumpLink(' + data.table.rows[i].c[4].v + ')');
 
             //Final render
-            Btn_Layout.append(Button1, Button2);
+            Btn_Layout.append(Button1);
 
 
 
@@ -80,7 +76,7 @@ fetch(_URL)
                 Thumbnail.style.aspectRatio = "3/2";
                 Thumbnail.style.objectFit = "contain";
 
-                Content_Block.append(Title, Thumbnail, Description, Btn_Layout);
+                Content_Block.append(Title, Thumbnail, Date, Description, Btn_Layout);
 
                 document.getElementById('Main_Post').appendChild(Content_Block);
 
@@ -89,6 +85,8 @@ fetch(_URL)
                 Content_Block.append(Title, Description);
 
                 document.getElementById('Main_Post').appendChild(Content_Block);
+
+        
             }
         }
     }
