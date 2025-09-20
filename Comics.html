@@ -11,44 +11,10 @@
         <link rel="stylesheet" href="Css/Aero.css">
         <link rel="stylesheet" href="Css/BoxCS.css">
         <link rel="stylesheet" href="Css/Quirks.css">
+        <link rel="stylesheet" href="Css/Mobile.css">
     </head>
 
-    <style>
-        
-        @font-face {
-            font-family: 'Frutiger';
-            src: url(Libraries/Frutiger/Frutiger.ttf);
-        }
-
-        h1
-        {
-            font-family: 'Frutiger';
-            font-size: 30px;
-            text-align: center;
-
-            margin: 0%;
-            
-        }
-
-        h2
-        {
-            font-family: 'Frutiger';
-            font-size: 25px;
-            text-align: center;
-
-            margin: 0%;
-
-        }
-
-        p
-        {
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 11px;
-        }
-
-    </style>
-
-    <script src="Js/Json_Comic.js"></script>
+    
 
     <Body class="Margin_Flatline V-div-Ladder">
         <header>
@@ -68,12 +34,19 @@
 
         </header>
 
+        <Style>
+            @font-face 
+            {
+                font-family: 'Frutiger';
+                src: url(Libraries/Frutiger/Frutiger.ttf);
+            }
+        </Style>
+
         <div class="Glass">
 
             <div class="Spacer-100"></div>
 
-           
-            <div class="I_Card_Main">
+            <div class="I_Card_Main" id="Anchor_Point">
                 
                 <div class="I_Card_Top"></div>
 
@@ -83,13 +56,25 @@
 
                     <div class="I_Card_Content">
 
+                        <div class="Text_Content Grid_A" id="txtcontent">
+                            <p id="T-Content">Context text template.</p>
+                        </div>
+
                         <div class="H-div-Tracks Evenly V-Margin-25 Grid_B"> 
 
-                            <button type="button" class="Aero_Button" id="PREVIEW" onclick="Preview()">
-                                <h2>Preview</h2>
+                            <button type="button" class="Aero_Button" id="PREVIOUS" onclick="Previous(), window.location.href = '#Anchor_Point' ">
+                                <h2>Previous</h2>  
                             </button>
 
-                            <button type="button" class="Aero_Button" id="NEXT" onclick="Next()">
+                            <button type="button" class="Aero_Button" id="DIALOG">
+                                <h2>Hide Dialog</h2>
+                            </button>
+
+                            <button type="button" class="Aero_Button" onclick="SavePage()">
+                                <h2>Save</h2>
+                            </button>
+
+                            <button type="button" class="Aero_Button" id="NEXT" onclick="Next(), window.location.href = '#Anchor_Point' ">
                                 <h2>Next</h2>
                             </button>
 
@@ -103,16 +88,11 @@
 
             </div>
 
-            <div class="Spacer-300"></div>
+            <div class="Spacer-100"></div>
             
-            
-            
-            
-
-            
-            
-
         </div>
+
+        <script src="Js/Json_Comic.js"></script>
 
         <footer>
             <h2 class="WhiteText V-Margin-25"> &#169; 2023 Project_Math() | All Rights reserve </h2>
