@@ -1,0 +1,55 @@
+@media (width < 700px)
+{
+    h1
+    {
+        font-size: 20px;
+    }
+
+    h2
+    {
+        font-size: 20px;
+    }
+
+    p
+    {
+        font-size: 8px;
+    }
+
+    header
+    {
+        height: 150px;
+
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+    }
+
+    footer
+    {
+        height: 50px;
+
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+    }
+
+    .Glass
+    {
+        width: 80%;
+    }
+
+    .I_Card_Top
+    {
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+    }
+
+    .I_Card_Bottom
+    {
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+    }
+
+    .I_Card_Content
+    {
+        border-radius: 25px;
+    }
+}

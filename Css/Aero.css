@@ -1,5 +1,12 @@
 /*-----{Properties}-----*/
 
+@property --Bright_Froffy_Green
+{
+    syntax: "<color>";
+    inherits: false;
+    initail-value: #a0ffa0;
+}
+
 @property --Candy_Emerald_Green
 {
     syntax: "<color>";
@@ -7,7 +14,49 @@
     initial-value: #00c81e;
 }
 
+@property --Dark_Bog_Green
+{
+    syntax: "<color>";
+    inherits: false;
+    initail-value: #007d14;
+}
+
+@property --gradient-direction 
+{
+    syntax: '<angle> | <custom-ident>';
+    inherits: false;
+    initial-value: to top;
+}
+
+
 /*-----{Tags}-----*/
+
+
+h1
+{
+    font-family: 'Frutiger';
+    font-size: 30px;
+    text-align: center;
+
+    margin: 0%;
+    
+}
+
+h2
+{
+    font-family: 'Frutiger';
+    font-size: 25px;
+    text-align: center;
+
+    margin: 0%;
+
+}
+
+p
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+}
 
 html
 {
@@ -19,6 +68,8 @@ html
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
+
+    scrollbar-gutter: stable;
 }
 
 header
@@ -88,7 +139,7 @@ a
 {
     color: white;
 
-    background: linear-gradient(to top, rgba(50, 150, 50, 1) 0%, rgba(100, 255, 100, 1) 80%);
+    background: linear-gradient(to top, #007d14 0%, #a0ffa0 80%);
     
     padding: 2.5%;
 
@@ -101,12 +152,13 @@ a
 
 .Banner
 {
-    background: linear-gradient(to top, rgba(50, 150, 50, 1) 0%, rgba(100, 255, 100, 1) 80%);
+    background: linear-gradient(to top, #007d14 0%, #a0ffa0 80%);
 
     height: 50px;
 
     width: 100%;
 }
+
 /*-----{I_Cards Attributes}-----*/
 
 .I_Card_Main
@@ -133,7 +185,7 @@ a
 {
     background-color: lightgrey;
 
-    height: 20%;
+    height: 25%;
 }
 
 .I_Card_Content
@@ -148,9 +200,24 @@ a
     display: grid;
 
     grid-template-areas: 
-    ". . ."
-    ". . ."
+    "A A A"
+    "A A A"
     "B B B";
+}
+
+.Text_Content
+{
+    background-color: rgba(255, 255, 255, 0.8);
+    
+
+    padding: 25px;
+    margin: 25px;
+
+    border-radius: 25px;
+
+    overflow: auto;
+
+    
 }
 
 .I_Card_Bottom
@@ -161,4 +228,13 @@ a
     
     border-bottom-left-radius: 100px;
     border-bottom-right-radius: 100px;
+}
+
+/*-----{Others}-----*/
+
+.VerticalPadding
+{
+    padding-top: 25px;
+    gap: 10px;
+    padding-bottom: 25px;
 }

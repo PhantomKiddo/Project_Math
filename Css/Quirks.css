@@ -6,6 +6,8 @@ html
 li :hover
 {
     cursor: url(../Images/UI/Pointer_Hand.svg), auto;
+
+    
 }
 
 /*-----{Properties}-----*/
@@ -24,7 +26,7 @@ li :hover
     display: grid;
 
     grid-template-areas: 
-    "B A A"
+    "B A E"
     "B C C"
     "B D D";
 
@@ -33,6 +35,20 @@ li :hover
     gap: 5%;
 
     padding: 5%;
+}
+
+.Content_Button_Layout_01
+{
+
+    display: grid;
+
+    grid-template-areas: 
+    "A A"
+    "B C";
+
+    justify-items: center;
+
+    gap: 10px;
 }
 
 .Aero_Button:hover
@@ -59,6 +75,8 @@ li :hover
     animation-fill-mode: forwards;
 }
 
+
+
 @keyframes Mouse_OnEnter
 {
     0%{}
@@ -71,4 +89,24 @@ li :hover
     0%{box-shadow:  0px 0px 10px var(--Electric_Blue_Boogalue);}
 
     100%{}
+}
+
+
+
+::-webkit-scrollbar
+{
+    width: 15px;
+}
+
+::-webkit-scrollbar-track
+{
+    background: transparent;
+    border-radius: 25px;
+}
+
+::-webkit-scrollbar-thumb 
+{
+  background: linear-gradient(to top, #007d14 0%, #a0ffa0 50%, #007d14 100%);
+  border: 2.5px, solid, rgba(50, 150, 50, 1);
+  border-radius: 25px;
 }
