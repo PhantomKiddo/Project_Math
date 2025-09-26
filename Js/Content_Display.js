@@ -93,29 +93,3 @@ fetch(_URL)
 }) 
 
 
-
-fetch(MainContent)
-.then((respond) => respond.json())
-.then((DataContent) => 
-{
-    if(document.getElementById('Comic_Post'))
-    {
-        for (let i = 0; i < DataContent.Act_0.length; i++) 
-        {
-            
-            //Basic Button Link
-            const ButtonLnk = document.createElement('button');
-            ButtonLnk.className = "Aero_Button";
-            const BntTxtLnk = document.createElement('h2');
-            BntTxtLnk.textContent = DataContent.Act_0[i].Page_Name;
-            ButtonLnk.append(BntTxtLnk);
-
-            //JumpLink
-            ButtonLnk.setAttribute('onclick', 'JumpLink(' + DataContent.Act_0[i].Page + ')');
-
-            //Final render
-            document.getElementById('Comic_Post').appendChild(ButtonLnk);
-            
-        }
-    }
-})

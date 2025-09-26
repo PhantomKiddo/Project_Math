@@ -1,104 +1,134 @@
+//----------[data]----------
+
 const ComicURL = "Json/Comics.Json";
 
 let Page = parseInt(localStorage.getItem("Page_Value")) || 0;
-
 let SaveData = parseInt(localStorage.getItem("Save_Page")) || 0;
 
-const DialogBtn = document.getElementById("DIALOG");
-
-const TxtContent = document.getElementById("txtcontent");
+var LocalData;
 
 
 
-DialogBtn.addEventListener("click", event => 
+//----------[Buttons]----------
+
+const NEXT_Btn = document.getElementById("NEXT");
+
+const PREVIOUS_Btn = document.getElementById("PREVIOUS");
+
+const SAVE_Btn = document.getElementById("SAVE");
+
+const CONTINUE_Btn = document.getElementById("CONTINUE");
+
+const RESET_Btn = document.getElementById("RESET");
+
+const DIALOG_Btn = document.getElementById("DIALOG");
+
+
+
+//----------[TextContent]----------
+
+const TxtContent = document.getElementById("txtcontent")
+
+if (DIALOG_Btn) {
+    DIALOG_Btn.addEventListener("click", () => 
+    {
+        TxtContent.toggleAttribute("hidden");
+        TxtContent.classList.toggle("IsHidden")
+        DIALOG_Btn.children[0].textContent = TxtContent.classList.contains("IsHidden") 
+            ? "Show Dialog" 
+            : "Hide Dialog";
+    });
+}
+
+
+
+//----------[Update_Page]----------
+
+function UpdatPage()
 {
-    if(TxtContent.style.display === "none")
+    var Image = document.createElement("img");
+
+    if(PREVIOUS_Btn)PREVIOUS_Btn.style.visibility = Page === 0? "hidden" : "visible";
+    if(NEXT_Btn)NEXT_Btn.style.visibility = Page === LocalData.Act_0.length - 1? "hidden" : "visible";
+
+    
+
+    Image.src = LocalData.Act_0[Page].Image;
+    Image.style.width = "100%";
+    Image.style.verticalAlign = "middle";
+    
+    if(document.getElementById('Display'))
     {
-        TxtContent.style.display = "block"
-        DialogBtn.children[0].textContent = "Hide Dialog"
-    }else
-    {
-        TxtContent.style.display = "none"
-        DialogBtn.children[0].textContent = "Show Dialog"
+        document.getElementById('Display').append(Image);
     }
-})
-
-
-
-function Next()
-{
-    Page++;
-    localStorage.setItem("Page_Value", Page );
-    window.location.reload();
     
-}
 
-function Previous()
-{
-    Page--;
-    localStorage.setItem("Page_Value", Page );
-    window.location.reload();
     
-}
 
-function JumpLink(Linkvalue)
-{
-    localStorage.setItem("Page_Value", Linkvalue);
-    window.location.href = "Comics.html";
-    
-}
-
-function SavePage()
-{
-    localStorage.setItem("Save_Page", Page);
-    
-}
-
-function ResetPage()
-{
-    localStorage.setItem("Save_Page", 0);
-    SaveData = 0;
-}
-
-function ContinuePage()
-{
-    localStorage.setItem("Page_Value", SaveData);
-    window.location.href = "Comics.html";
+    fetch(LocalData.Act_0[Page].Dialog)
+    .then(res => res.text())
+    .then(dialogText => 
+    {
+        if(document.getElementById("txtcontent"))
+        {
+            document.getElementById("txtcontent").innerHTML = dialogText;
+        }
+    })
 }
 
 
+
+//----------[Buttons_Attripute]----------
 
 fetch(ComicURL)
 .then((respond) => respond.json())
-.then((InfoData) => 
+.then((data) => 
 {
-    
-    if(Page == 0)
+
+    LocalData = data;
+
+    UpdatPage()
+
+    if(NEXT_Btn)
     {
-        document.getElementById("PREVIOUS").style.visibility = "hidden";
+        NEXT_Btn.addEventListener("click", () => 
+        {
+            Page ++;
+            localStorage.setItem("Page_Value", Page);
+            window.location.reload()
+
+            //console.log(Page);
+        })
     }
     
-    if(InfoData.Act_0.length == Page + 1)
+    if(PREVIOUS_Btn)
     {
-        document.getElementById("NEXT").style.visibility = "hidden";
+        PREVIOUS_Btn.addEventListener("click", () => 
+        {
+            Page --;
+            localStorage.setItem("Page_Value", Page);
+            window.location.reload()
+            
+            //console.log(Page);
+        }) 
     }
-
-
     
-    if(Page == InfoData.Act_0[Page].Page)
-    {
-        const Image = document.createElement("img");
-
-        const P = document.getElementById("T-Content");
-
-        Image.src = InfoData.Act_0[Page].Image;
-        Image.style.width = '100%'
-        Image.style.verticalAlign = 'middle';
-
-        P.textContent = InfoData.Act_0[Page].Description;
-        
-        if(!document.getElementById("Display"))return;
-        
-        document.getElementById("Display").append(Image);
-    }
 })
+
+if(SAVE_Btn)SAVE_Btn.addEventListener("click", () => localStorage.setItem("Save_Page", Page));
+
+if(RESET_Btn)RESET_Btn.addEventListener("click", () => localStorage.setItem("Save_Page", 0));
+
+if(CONTINUE_Btn)CONTINUE_Btn.addEventListener("click", () => 
+{
+    localStorage.setItem("Page_Value", SaveData);
+    window.location.href = "Comics.html";
+});
+
+function JumpLink(Value)
+{
+    localStorage.setItem("Page_Value",Value)
+    window.location.href = 'Comics.html'
+}
+
+
