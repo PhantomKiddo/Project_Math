@@ -19,6 +19,8 @@
         <link rel="stylesheet" href="Css/Mobile.css">
     </head>
 
+
+
     <Style>
         @font-face 
         {
@@ -27,9 +29,7 @@
         }
     </Style>
 
-    <Script src="Js/Character_Query.js"></Script>
-    <script src="Js/Content_Display.js"></script>
-    <script src="Js/Json_Comic.js"></script>
+
 
     <Body class="Margin_Flatline V-div-Ladder">
         <header>
@@ -49,33 +49,7 @@
 
         </header>
 
-        <div class="Glass V-div-Ladder" id="">
-            <!-- 
-                <div class="Content_Block Content_Block_Layout">
-
-                    <h2 class="Grid_A">Project_Math(): Act_0 Eps_0</h2>
-
-                    <div class="Grid_B Box"></div>
-
-                    <p class="Grid_C">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        In soluta dignissimos harum. Quia amet aliquam doloribus quibusdam quo! 
-                        Voluptatum molestias saepe quia ab illum itaque modi quibusdam repudiandae omnis dolorem?
-                    </p>
-
-                    <div class="Grid_D H-div-Tracks Evenly" style="gap: 5%;">
-                        <button class="Aero_Button"> 
-                            <h2> Read the comic </h2>
-                        </button>
-
-                        <button class="Aero_Button"> 
-                            <h2> Return to normal </h2>
-                        </button>
-
-                    </div>
-
-                </div>
-            -->
+        <div class="Glass V-div-Ladder">
 
             <div class="Content_Block">
 
@@ -89,11 +63,11 @@
                             <h2>Read The Comic</h2>
                         </button>
 
-                        <button type="button" class="Aero_Button Grid_B" onclick="ContinuePage()">
+                        <button type="button" class="Aero_Button Grid_B" id="CONTINUE">
                             <h2>Continue</h2>
                         </button>
 
-                        <button type="button" class="Aero_Button Grid_C" onclick="ResetPage()">
+                        <button type="button" class="Aero_Button Grid_C" id="RESET">
                             <h2>Reset</h2>
                         </button>
 
@@ -109,11 +83,7 @@
                     <h2 class="WhiteText">News</h2>
                 </div>
 
-                <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                    Impedit, eaque laudantium quo culpa, fugit rem maxime officiis ab 
-                    maiores odit ea blanditiis, vero officia molestias quae. 
-                    Alias delectus consectetur illum?
-                </p>
+                <div id="News_1"></div>
 
                 <div class="Spacer-100"></div>
 
@@ -121,7 +91,8 @@
             
         </div>
 
-        
+        <script src="Js/JS_tester.js"></script>
+        <script src="Js/Json_Comic.js"></script>
 
         <footer>
             <h2 class="WhiteText V-Margin-25"> &#169; 2023 Project_Math() | All Rights reserve </h2>

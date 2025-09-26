@@ -12,9 +12,16 @@
         <link rel="stylesheet" href="Css/BoxCS.css">
         <link rel="stylesheet" href="Css/Quirks.css">
         <link rel="stylesheet" href="Css/Mobile.css">
+        <link rel="stylesheet" href="Css/Dialog.css">
     </head>
 
-    
+    <Style>
+            @font-face 
+            {
+                font-family: 'Frutiger';
+                src: url(Libraries/Frutiger/Frutiger.ttf);
+            }
+    </Style>
 
     <Body class="Margin_Flatline V-div-Ladder">
         <header>
@@ -34,13 +41,7 @@
 
         </header>
 
-        <Style>
-            @font-face 
-            {
-                font-family: 'Frutiger';
-                src: url(Libraries/Frutiger/Frutiger.ttf);
-            }
-        </Style>
+        
 
         <div class="Glass">
 
@@ -57,24 +58,24 @@
                     <div class="I_Card_Content">
 
                         <div class="Text_Content Grid_A" id="txtcontent">
-                            <p id="T-Content">Context text template.</p>
+                            <p>Context text template.</p>
                         </div>
 
-                        <div class="H-div-Tracks Evenly V-Margin-25 Grid_B"> 
+                        <div class="H-div-Tracks Evenly V-Margin-25 Grid_B Content_Button_Layout_02"> 
 
-                            <button type="button" class="Aero_Button" id="PREVIOUS" onclick="Previous(), window.location.href = '#Anchor_Point' ">
+                            <button type="button" class="Aero_Button Grid_A" id="PREVIOUS" onclick="window.location.href = '#Anchor_Point' ">
                                 <h2>Previous</h2>  
                             </button>
 
-                            <button type="button" class="Aero_Button" id="DIALOG">
+                            <button type="button" class="Aero_Button Grid_B" id="DIALOG">
                                 <h2>Hide Dialog</h2>
                             </button>
 
-                            <button type="button" class="Aero_Button" onclick="SavePage()">
+                            <button type="button" class="Aero_Button Grid_C" id="SAVE">
                                 <h2>Save</h2>
                             </button>
 
-                            <button type="button" class="Aero_Button" id="NEXT" onclick="Next(), window.location.href = '#Anchor_Point' ">
+                            <button type="button" class="Aero_Button Grid_D" id="NEXT" onclick="window.location.href = '#Anchor_Point' ">
                                 <h2>Next</h2>
                             </button>
 
@@ -88,7 +89,7 @@
 
             </div>
 
-            <div class="Spacer-100"></div>
+            <div class="Spacer-300"></div>
             
         </div>
 
