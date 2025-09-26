@@ -1,0 +1,12 @@
+<p class="Narrator">
+    A young girl woke up in her bedroom as sunlight streamed through the window. 
+    It just so happens that today Friday, June 6th…   
+</p>
+
+<p class="Esmeralda">
+    Oh shit I’m late!!
+</p>
+
+<p class="Narrator">
+    She's late for work.
+</p>

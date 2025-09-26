@@ -1,0 +1,13 @@
+<p class="Narrator">
+    revealing her name. <b class="Esmeralda">Esmeralda.</b>
+</p>
+
+<p class="Narrator">
+    Esmeralda storms out of the room, 
+    snatching her phone and keys before 
+    dashing to the kitchen for a quick coffee.<br><br>
+
+    Unfortunately, by the time you brew your coffee, 
+    you’ve noticed one of her favorite coffee creamer 
+    Coffee Mate: French Vanilla has already been depleted.
+</p>

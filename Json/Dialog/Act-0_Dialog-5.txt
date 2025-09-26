@@ -1,0 +1,14 @@
+<p class="Narrator">
+    As expected, you chugged the whole coffee and now you feel nauseous. 
+    Cinnamon mixed with hot water and that rancid, disgusting sludge they dare to call creamer. 
+    You consider puking everything back into the mug, but it's too late; 
+    three-quarters of that muck is already squatting in your stomach. 
+    Forcing it all out would not only be messy but also unpleasant. 
+    You try to "relax" and swallow the rest of the contents, 
+    realizing that chugging it wasn't a good idea in the first place, 
+    but you can't relax now; you're already late for work...
+</p>
+
+<p class="Narrator">
+    Esmeralda, swallow and go to work.
+</p>
