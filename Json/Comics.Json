@@ -13,7 +13,7 @@
 
             "Thumbnail": "Images/Thumbnail/ThumbNail_0.png",
 
-            "Description": "A young girl woke up in her bedroom as sunlight streamed through the window. It just so happens that today Friday, June 6th…"
+            "Dialog": "Libraries/Dialog/Act-0_Dialog-0.txt"
         },
 
         {
@@ -25,7 +25,7 @@
 
             "Thumbnail": "Images/Thumbnail/ThumbNail_1.png",
 
-            "Description": "The Girl jumped out of her bed and raced to her hamper where she had no time to take a quick shower, nor brushing her hair..."
+            "Dialog": "Libraries/Dialog/Act-0_Dialog-1.txt"
         },
 
         {
@@ -37,7 +37,7 @@
 
             "Thumbnail": "Images/Thumbnail/ThumbNail_2.png",
 
-            "Description": "Unfortunately, by the time you brew your coffee, you’ve noticed one of her favorite coffee..."
+            "Dialog": "Libraries/Dialog/Act-0_Dialog-2.txt"
         },
 
         {
@@ -49,7 +49,7 @@
 
             "Thumbnail": "Images/Thumbnail/ThumbNail_3.png",
 
-            "Description": "The only creamer left in the fridge, a relic best left untouched. It's the infamous Starbucks Cinnamon Dolce...."
+            "Dialog": "Libraries/Dialog/Act-0_Dialog-3.txt"
         },
 
         {
@@ -61,7 +61,7 @@
 
             "Thumbnail": "Images/Thumbnail/ThumbNail_3.png",
 
-            "Description": "You don’t know why your mother insists on buying this garbage, especially when she knows you live on coffee. You don’t have time to squander...."
+            "Dialog": "Libraries/Dialog/Act-0_Dialog-4.txt"
         },
 
         {
@@ -73,10 +73,7 @@
 
             "Thumbnail": "Images/Thumbnail/ThumbNail_3.png",
 
-            "Description": "As expected, you chugged the whole coffee and now you feel nauseous...."
+            "Dialog": "Libraries/Dialog/Act-0_Dialog-5.txt"
         }
-
-
-
     ]
 }
