@@ -1,240 +1,271 @@
+/*-----{Fonts}-----*/
+
+
+
+@font-face 
+{
+    font-family: 'Frutiger';
+    src: url(Libraries/Frutiger/Frutiger.ttf);
+}
+
+@font-face {
+    font-family: 'Neuropol';
+    src: url(/Libraries/Neuropol/Neuropol.otf);
+}
+
+
+
 /*-----{Properties}-----*/
 
-@property --Bright_Froffy_Green
+
+
+@property --Watery_Blue
 {
     syntax: "<color>";
     inherits: false;
-    initail-value: #a0ffa0;
+    initail-value: #1919ff;
 }
 
-@property --Candy_Emerald_Green
+@property --Green_Earth
 {
     syntax: "<color>";
     inherits: false;
     initial-value: #00c81e;
 }
 
-@property --Dark_Bog_Green
+@property --Red_Fire
 {
     syntax: "<color>";
     inherits: false;
-    initail-value: #007d14;
+    initial-value: #e60000;
 }
 
-@property --gradient-direction 
+@property --Airy_Orange 
 {
-    syntax: '<angle> | <custom-ident>';
+    syntax: "<color>";
     inherits: false;
-    initial-value: to top;
+    initial-value: #ff8c00;
 }
+
 
 
 /*-----{Tags}-----*/
 
 
-h1
-{
-    font-family: 'Frutiger';
-    font-size: 30px;
-    text-align: center;
-
-    margin: 0%;
-    
-}
-
-h2
-{
-    font-family: 'Frutiger';
-    font-size: 25px;
-    text-align: center;
-
-    margin: 0%;
-
-}
-
-p
-{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 11px;
-}
-
-html
-{
-    background-color: darkgray;
-    
-    background-image: url(../Images/Background/Frutiger_Background.gif);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
-
-    scrollbar-gutter: stable;
-}
 
 header
 {
-    background: linear-gradient(to top, #00c81e 0%, #646464 25%);
-
-    height: 200px;
-    width: 100%;
-
-    border-bottom-left-radius: 100px;
-    border-bottom-right-radius: 100px;
-
-    z-index: 1;
-}
-
-footer
-{
-    background: linear-gradient(to Bottom, #00c81e 0%, #646464 75%);
+    background-color: white;
 
     height: 100px;
     width: 100%;
 
-    border-top-left-radius: 100px;
-    border-top-right-radius: 100px;
+    
 
-    z-index: 1;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
 }
 
-li
+body
 {
-    list-style: none;
+    background-color: grey;
+    margin: 0%;
 }
 
-a
+footer
 {
-    text-decoration: none;
+    background-color: white;
+
+    height: 100px;
+    width: 100%;
+
+    
+
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
 }
+
+h1
+{
+    font-family: 'Neuropol', sans-serif;
+
+    font-size: 35px;
+
+    margin: 0%;
+}
+
+h2
+{
+    font-family: 'Frutiger', sans-serif;
+
+    font-size: 20px;
+
+    margin: 0%;
+}
+
+h3
+{
+    font-family: 'Frutiger', sans-serif;
+
+    font-size: 10px;
+
+    margin: 0%;
+}
+
+p
+{
+    font-family: 'Frutiger', sans-serif;
+
+    font-size: 11px;
+
+}
+
+
 
 /*-----{Classes}-----*/
 
-.WhiteText{color: white;}
-
-.Glass
+.Background
 {
-    background: linear-gradient(to left, rgba(0,125,20, 0.5) 0%, transparent 10%, transparent 90%, rgba(0,125,20, 0.5) 100%);
-
-    width: 60%;
-
-    backdrop-filter: blur(5px);
-    
-    box-shadow: 0px 0px 10px 15px rgba(0, 0, 0, 0.5);
+    background-image: url(../Images/Background/Frutiger_Background.gif);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
-.Content_Block
+.Wht{color: white;}
+
+.Main
 {
-    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
 
-    margin: 25px;
+.Slider_Buttons
+{
+    background: linear-gradient(to left, rgb(88, 88, 88), lightgrey);
 
+    height: 100vh;
+    width: 3vw;
+
+    margin: 0%;
+
+    border: none;
+}
+
+.Slider_Display
+{
+
+    height: 100%;
+    width: auto;
+
+    padding: 2.5%;
+}
+
+.Glass_Content
+{
+    background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.5), transparent);
+    
+
+
+    height: fit-content;
+    width: 100%;
+
+    padding: 15px;
+
+    border: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 25px;
-    
-    border: 2.5px, solid, rgb(190, 190, 190);
-    
+
+
+
+    box-shadow: black 0px 0px 10px;
+    backdrop-filter: blur(10px);
 }
 
-.Aero_Button
+.Bubbles
 {
+    background: linear-gradient( to top, rgba(100, 100, 255, .7) 50%, rgba(130, 130, 255, .7) 51%, rgba(175, 175, 255, .7) 70%);
+
+    
+    
     color: white;
 
-    background: linear-gradient(to top, #007d14 0%, #a0ffa0 80%);
-    
+    width: fit-content;
+    height: 100%;
+
     padding: 2.5%;
 
-    border-radius: 25px;
+    border: solid 1px black;
+    
+    border-radius: 15px;
 
-    border: 2.5px, solid, rgba(50, 150, 50, 1);
-
-
+    /*backdrop-filter: blur(5px);*/
 }
 
-.Banner
+.Bubbles:hover
 {
-    background: linear-gradient(to top, #007d14 0%, #a0ffa0 80%);
+    background: linear-gradient( to top, rgba(130, 130, 255, 1) 10%, rgba(100, 100, 255, .7) 50%, rgb(130, 130, 255, .7) 51%, rgba(175, 175, 255, .7) 70%);
+    text-decoration: 1px underline;
 
-    height: 50px;
+    filter: brightness(1);
+    
+    box-shadow: 0px 0px 10px rgb(80, 80, 255);
+}
 
-    width: 100%;
+.Rotate_90_degree
+{
+    transform: rotate(-90deg);
 }
 
 /*-----{I_Cards Attributes}-----*/
 
-.I_Card_Main
+
+
+.Content_Card_Background
 {
-    background-color: transparent;
+    background: linear-gradient(to top,rgb(20, 175, 20) 25%, rgb(50, 255, 50) 50%);
 
-    width: 80%;
-    height: 80em;
+    width: fit-content;
+    height: fit-content;
 
-    margin: auto;
-}
-
-.I_Card_Top
-{
-    background-color: lightgrey;
-
-    height: 5%;
-
-    border-top-left-radius: 100px;
-    border-top-right-radius: 100px;
-}
-
-.I_Card_Center
-{
-    background-color: lightgrey;
-
-    height: 25%;
-}
-
-.I_Card_Content
-{
-    background-color: grey;
-
-    height: 90%;
-    width: 90%;
-
-    border-radius: 50px;
-
-    display: grid;
-
-    grid-template-areas: 
-    "A A A"
-    "A A A"
-    "B B B";
-}
-
-.Text_Content
-{
-    background-color: rgba(255, 255, 255, 0.8);
+    padding: 1vh;
     
+    border-radius: 25px;
+}
 
-    padding: 25px;
-    margin: 25px;
+.Content_Card_Display
+{
+    background-color: white;
+
+    width: fit-content;
+    height: fit-content;
+
+    padding: 1vh;
 
     border-radius: 25px;
-
-    overflow: auto;
-
-    
 }
 
-.I_Card_Bottom
-{
-    background-color: lightgrey;
 
-    height: 5%;
-    
-    border-bottom-left-radius: 100px;
-    border-bottom-right-radius: 100px;
-}
 
 /*-----{Others}-----*/
 
-.VerticalPadding
+.Water
 {
-    padding-top: 25px;
-    gap: 10px;
-    padding-bottom: 25px;
+    background-color: #1919ff;
+}
+
+.Earth
+{
+    background-color: #00c81e;
+}
+
+.Fire
+{
+    background-color: #e60000;
+}
+
+.Air
+{
+    background-color: #ff8c00;
 }

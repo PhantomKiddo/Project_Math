@@ -1,95 +1,140 @@
 html
 {
-    cursor: url(../Images/UI/Arrow_Head.svg), auto;
+    cursor: url(../Images/UI/Web_Arrow.svg), auto;
 }
 
-li :hover
+button:hover
 {
-    cursor: url(../Images/UI/Pointer_Hand.svg), auto;
-
-    
+    cursor: url(../Images/UI/Web_Pointer.svg), auto;
 }
+
+button#Water:hover
+{
+    color: #aaaaff;
+    text-shadow: #1919ff 0px 0px 5px;
+}
+
+button#Earth:hover
+{
+    color: #a0ffa0;
+    text-shadow: #00c81e 0px 0px 5px;
+}
+
+button#Fire:hover
+{
+    color: #ff8282;
+    text-shadow: #e60000 0px 0px 5px;
+}
+
+button#Air:hover
+{
+    color: #ffc67f;
+    text-shadow: #ff8c00 0px 0px 5px;
+}
+
+#DashBoard_Slider_Left
+{
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+}
+
+#DashBoard_Slider_Right
+{
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+}
+
 
 /*-----{Properties}-----*/
 
-@property --Electric_Blue_Boogalue
+.Dialog
 {
-    syntax: "<color>";
-    inherits: false;
-    initial-value: #1919ff;
+    background-color: white;
+
+    width: 500px;
+    height: 150px;
+
+
+    margin: auto;
+    padding: 2vh;
+
+    border-radius: 25px;
+
+    overflow-y: scroll;
 }
 
-/*-----{Content_Block_Features}-----*/
-
-.Content_Block_Layout
+.Button_Layout
 {
     display: grid;
-
+    
     grid-template-areas: 
-    "B A E"
-    "B C C"
-    "B D D";
-
-    align-items: center;
-
-    gap: 5%;
-
-    padding: 5%;
-}
-
-.Content_Button_Layout_01
-{
-
-    display: grid;
-
-    grid-template-areas: 
-    "A A"
-    "B C";
+    "A B D"
+    ". C .";
 
     justify-items: center;
 
-    gap: 10px;
+    gap: 5px;
+
+    margin: 2.5vh;
 }
 
-.Aero_Button:hover
+.Slider_Content
 {
-    cursor: url(../Images/UI/Pointer_Hand.svg), auto;
 
-    border: 2.5px, solid,  var(--Electric_Blue_Boogalue);
+    height: 100vh;
+    width: 700px;
 
-    background: linear-gradient(to top, rgb(50, 5, 180) 0%, var(--Electric_Blue_Boogalue) 80%);
+    display: grid;
 
-    animation-name: Mouse_OnEnter;
+    grid-auto-flow: column;
+    grid-auto-columns: 100%;
 
-    animation-duration: .5s;
+    overflow-x: hidden;
+    overflow-y: auto;
+    
+    scroll-behavior: smooth;
 
-    animation-fill-mode: forwards;
 }
 
-.Aero_Button:not(:hover)
+.Library
 {
-    animation-name: Mouse_OnExit;
 
-    animation-duration: .5s;
+    display: flex;
+    flex-direction: column;
 
-    animation-fill-mode: forwards;
+    gap: 15px;
+
+    margin: 5vh;
 }
 
-
-
-@keyframes Mouse_OnEnter
+.Library_Content_Layout
 {
-    0%{}
+    display: grid;
+    grid-template-areas: 
+    "A C"
+    "B .";
 
-    100%{box-shadow:  0px 0px 10px var(--Electric_Blue_Boogalue);}
+    justify-items: center;
 }
 
-@keyframes Mouse_OnExit
+.Comic
 {
-    0%{box-shadow:  0px 0px 10px var(--Electric_Blue_Boogalue);}
+    
+    display: grid;
+    grid-template-areas: 
+    "A B B"
+    "A C C"
+    "A D D";
 
-    100%{}
+    gap: 15px;
+
+    margin: 5vh;
 }
+
+
+/*-----{Content_Block_Features}-----*/
 
 
 
@@ -106,7 +151,12 @@ li :hover
 
 ::-webkit-scrollbar-thumb 
 {
-  background: linear-gradient(to top, #007d14 0%, #a0ffa0 50%, #007d14 100%);
-  border: 2.5px, solid, rgba(50, 150, 50, 1);
+  background: linear-gradient(to top, #6ba4ab 0%, #a3ced4 50%, #6ba4ab 100%);
+  border: 2.5px, solid, #65a2ab;
   border-radius: 25px;
 }
+
+
+
+/*-----{Animations}-----*/
+

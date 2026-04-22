@@ -54,7 +54,7 @@ function UpdatPage()
     
 
     Image.src = LocalData.Act_0[Page].Image;
-    Image.style.width = "100%";
+    Image.style.width = "650px";
     Image.style.verticalAlign = "middle";
     
     if(document.getElementById('Display'))

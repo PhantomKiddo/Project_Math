@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <title>Project_Math(Comics)</title>
-        <link rel="shortcut icon" href="" type="image/x-icon">
+        <link rel="shortcut icon" href="Images/UI/Web_Icon.svg" type="image/x-icon">
 
         <link rel="stylesheet" href="Css/Aero.css">
         <link rel="stylesheet" href="Css/BoxCS.css">
@@ -15,87 +15,53 @@
         <link rel="stylesheet" href="Css/Dialog.css">
     </head>
 
-    <Style>
-            @font-face 
-            {
-                font-family: 'Frutiger';
-                src: url(Libraries/Frutiger/Frutiger.ttf);
-            }
-    </Style>
+   
 
-    <Body class="Margin_Flatline V-div-Ladder">
+    <Body class="Background">
+        
         <header>
-
-            <h1 class="WhiteText V-Margin-25"> 
-                <img src="Images/UI/" alt="[Logo]"> Project_Math(Comics) 
-            </h1>
-
-            <hr class="H-Margin-25 V-Margin-25">
-
-            <nav class="H-div-Tracks Evenly">
-                <li><a href="index.html"><h2 class="WhiteText"> <img src="Images/UI/Home.svg" alt=""> <br> Home</h2></a></li>
-                <li><a href=""><h2 class="WhiteText"> <img src="Images/UI/" alt=""> <br>...</h2></a></li>
-                <li><a href=""><h2 class="WhiteText"> <img src="Images/UI/" alt=""> <br>...</h2></a></li>
-                <li><a href=""><h2 class="WhiteText"> <img src="Images/UI/" alt=""> <br>...</h2></a></li>
-            </nav>
-
+            <h1>Project_Math(<img src="Images/UI/Web_Icon.svg" height="30" alt="">)</h1>
         </header>
 
         
 
-        <div class="Glass">
+        <button class="Bubbles V-Margin-25" onclick="window.location.href='index.html'">  
+            <h2 class="WhiteText H-Margin-25">Back to Home</h2> 
+        </button>
 
-            <div class="Spacer-100"></div>
+        <div class="V-div-Ladder">
 
-            <div class="I_Card_Main" id="Anchor_Point">
-                
-                <div class="I_Card_Top"></div>
-
-                <div id="Display"></div>
-
-                <div class="I_Card_Center CENTER">
-
-                    <div class="I_Card_Content">
-
-                        <div class="Text_Content Grid_A" id="txtcontent">
-                            <p>Context text template.</p>
-                        </div>
-
-                        <div class="H-div-Tracks Evenly V-Margin-25 Grid_B Content_Button_Layout_02"> 
-
-                            <button type="button" class="Aero_Button Grid_A" id="PREVIOUS" onclick="window.location.href = '#Anchor_Point' ">
-                                <h2>Previous</h2>  
-                            </button>
-
-                            <button type="button" class="Aero_Button Grid_B" id="DIALOG">
-                                <h2>Hide Dialog</h2>
-                            </button>
-
-                            <button type="button" class="Aero_Button Grid_C" id="SAVE">
-                                <h2>Save</h2>
-                            </button>
-
-                            <button type="button" class="Aero_Button Grid_D" id="NEXT" onclick="window.location.href = '#Anchor_Point' ">
-                                <h2>Next</h2>
-                            </button>
-
-                        </div>
-
-                    </div>
-
+            <div class="Content_Card_Background">
+                <div class="Content_Card_Display" id="Display">
+            
                 </div>
 
-                <div class="I_Card_Bottom"></div>
+                <div class="Button_Layout">
+                    <button class="Bubbles Grid_A" id="PREVIOUS">
+                        <h2 class="H-Margin-25">Previous</h2>
+                    </button>
+                    <button class="Bubbles Grid_B" id="SAVE">
+                        <h2 class="H-Margin-25">Save</h2>
+                    </button>
+                    <button class="Bubbles Grid_C" id="DIALOG">
+                        <h2 class="H-Margin-25">Show Dialog</h2>
+                    </button>
+                    <button class="Bubbles Grid_D" id="NEXT">
+                        <h2 class="H-Margin-25">Next</h2>
+                    </button>
+                </div>
+
+                <div class="Dialog" id="txtcontent"></div>
 
             </div>
 
-            <div class="Spacer-300"></div>
-            
         </div>
 
+        <div class="Spacer-100"></div>
+        
         <script src="Js/Json_Comic.js"></script>
 
-        <footer>
+        <footer class="CENTER">
             <h2 class="WhiteText V-Margin-25"> &#169; 2023 Project_Math() | All Rights reserve </h2>
         </footer>
     </Body>

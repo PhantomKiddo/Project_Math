@@ -9,87 +9,45 @@ const Sheet_Range = 'B3:F20';
 
 const _URL = 'https://docs.google.com/spreadsheets/d/' + Sheet_ID + '/gviz/tq?sheet=' + Sheet_Name + '&range=' + Sheet_Range;
 
-fetch(_URL)
-.then((URL_respond) => URL_respond.text())
-.then((URL_Data) => 
+
+
+fetch(MainContent)
+.then((response) => response.json())
+.then((data) => 
 {
 
-    //Parsing Google Sheet for raw data.
-    let data = JSON.parse(URL_Data.substr(47).slice(0,-2));
-
-    if(document.getElementById('Main_Post'))
+    for (let i = 0; i < data.Act_0.length; i++)
     {
-        for (let i = 0; i < data.table.rows.length; i++) 
-        {
-
-
         
-            //Main content_Block
-            const Content_Block = document.createElement('div');
-            Content_Block.className = "Content_Block Content_Block_Layout";
-            
-            //The Title
-            const Title = document.createElement('h2');
-            Title.className = "Grid_A";
-            Title.textContent = data.table.rows[i].c[0].v;
+        const Content_Block = document.createElement('div');
+        Content_Block.className = "Glass_Content Library_Content_Layout";
 
-            //Description
-            const Description = document.createElement('p');
-            Description.className = "Grid_C";
-            Description.textContent = data.table.rows[i].c[1].v;
+        const Title = document.createElement('h2');
+        Title.textContent = data.Act_0[i].Page_Name;
+        Title.className = "Wht Grid_A";
 
-            //Date
-            const Date = document.createElement('p');
-            Date.className = "Grid_E";
-            Date.textContent = data.table.rows[i].c[2].v
+        const Description = document.createElement('p');
+        Description.innerHTML = data.Act_0[i].Dialog;
+        Description.className = "Grid_B";
 
+        //-----------------------[Button]-------------------------
 
+        const button = document.createElement('button');
+        button.className = "Bubbles Grid_C";
 
-            //Housing for the buttons
-            const Btn_Layout = document.createElement('div');
-            Btn_Layout.className = "Grid_D H-div-Tracks Evenly";
+        const BtnText = document.createElement('h3');
+        BtnText.textContent = "Read()";
+        BtnText.className = "H-Margin-25";
 
+        button.appendChild(BtnText);
 
+        button.setAttribute('onclick', 'JumpLink(' + data.Act_0[i].Page + ')');
 
-            //Button_1
-            const Button1 = document.createElement('button');
-            Button1.className = "Aero_Button";
-            const BntTxt1 = document.createElement('h2'); 
-            BntTxt1.textContent = "Read";
-            Button1.append(BntTxt1);
-
-            //JumpLink
-            Button1.setAttribute('onclick', 'JumpLink(' + data.table.rows[i].c[4].v + ')');
-
-            //Final render
-            Btn_Layout.append(Button1);
-
-
-
-            //Thumbnail
-            if(data.table.rows[i].c[3]?.v) 
-            {
-                const Thumbnail = document.createElement('img');
-                Thumbnail.className = "Grid_B";
-                Thumbnail.src = data.table.rows[i].c[3].v;
-                Thumbnail.style.width = "100%";
-                Thumbnail.style.aspectRatio = "3/2";
-                Thumbnail.style.objectFit = "contain";
-
-                Content_Block.append(Title, Thumbnail, Date, Description, Btn_Layout);
-
-                document.getElementById('Main_Post').appendChild(Content_Block);
-
-            }else
-            {
-                Content_Block.append(Title, Description);
-
-                document.getElementById('Main_Post').appendChild(Content_Block);
-
+        //-----------------------[Append]-------------------------
         
-            }
-        }
+        Content_Block.append(Title, Description, button);
+
+        document.getElementById('Main_Post').appendChild(Content_Block);
+
     }
-}) 
-
-
+})

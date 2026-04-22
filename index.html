@@ -1,101 +1,128 @@
 <!DOCTYPE html>
-
-<html lang="Eng">
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <title>Project_Math(Home)</title>
-        <link rel="shortcut icon" href="" type="image/x-icon">
-
-        <meta name="description" content="Welcome to Echo Oasis">
-        <meta name="keyword" content="Project, Math">
-        <meta name="Author" content="Phantom">
-        <meta name="" content="">
+        <link rel="icon" href="Images/UI/Web_Icon.svg">
 
         <link rel="stylesheet" href="Css/Aero.css">
         <link rel="stylesheet" href="Css/BoxCS.css">
         <link rel="stylesheet" href="Css/Quirks.css">
-        <link rel="stylesheet" href="Css/Mobile.css">
+    
     </head>
 
+    <header>
+        <h1>Project_Math(<img src="Images/UI/Web_Icon.svg" height="30" alt="">)</h1>
+    </header>
 
+    <body class="Background">
 
-    <Style>
-        @font-face 
-        {
-            font-family: 'Frutiger';
-            src: url(Libraries/Frutiger/Frutiger.ttf);
-        }
-    </Style>
+        <div class="Main">
+            
+            <!--{Dashboard_Buttons_Left}-->
 
+            <div id="DashBoard_Slider_Left">
 
+                <button class="Slider_Buttons" id="Water">
+                    <h2 class="Rotate_90_degree">Library</h2>
+                </button>
 
-    <Body class="Margin_Flatline V-div-Ladder">
-        <header>
+                <button class="Slider_Buttons"  id="Earth">
+                    <h2 class="Rotate_90_degree">Comic</h2>
+                </button>
 
-            <h1 class="WhiteText V-Margin-25"> 
-                <img src="Images/UI/" alt="[Logo]"> Project_Math(Home) 
-            </h1>
+            </div>
 
-            <hr class="H-Margin-25 V-Margin-25">
+            <!--{Slider}-->
 
-            <nav class="H-div-Tracks Evenly">
-                <li><a href="Library.html"><h2 class="WhiteText"> <img src="Images/UI/Comic.svg" alt=""> <br> Comics</h2></a></li>
-                <li><a href=""><h2 class="WhiteText"> <img src="Images/UI/" alt=""> <br>...</h2></a></li>
-                <li><a href=""><h2 class="WhiteText"> <img src="Images/UI/" alt=""> <br>...</h2></a></li>
-                <li><a href=""><h2 class="WhiteText"> <img src="Images/UI/" alt=""> <br>...</h2></a></li>
-            </nav>
+            <div class="Slider_Content" id="Slider">
 
-        </header>
+                <div class="Slider_Display Water" >
+                    <h1 class="Wht" >1 | <img src="Images/UI/Web_Library.svg" height="50" alt=""> Library</h1>
 
-        <div class="Glass V-div-Ladder">
+                    <div class="Library" id="Main_Post">
 
-            <div class="Content_Block">
-
-                <div class="V-div-Ladder VerticalPadding">
-
-                    <img src="Images/Comic/Act-0_Page-0.png" width="100%" alt="Front Image">
-
-                    <div class="Content_Button_Layout_01">
-
-                        <button type="button" class="Aero_Button Grid_A" onclick="JumpLink(0)">
-                            <h2>Read The Comic</h2>
-                        </button>
-
-                        <button type="button" class="Aero_Button Grid_B" id="CONTINUE">
-                            <h2>Continue</h2>
-                        </button>
-
-                        <button type="button" class="Aero_Button Grid_C" id="RESET">
-                            <h2>Reset</h2>
-                        </button>
+                        
 
                     </div>
 
                 </div>
-                
-            </div>
 
-            <div class="Content_Block VerticalPadding">
+                <div class="Slider_Display Earth">
+                    <h1 class="Wht" >2 | <img src="Images/UI/Web_Comic.svg" height="50" alt=""> Comic</h1> 
 
-                <div class="Banner CENTER"> 
-                    <h2 class="WhiteText">News</h2>
+                    <div class="Comic">
+
+                        <div class="Content_Card_Background Grid_A">
+                            <div alt="Project_Math()" class="Content_Card_Display">
+                                
+                            </div>
+                        </div>
+
+                        <div class="Glass_Content Grid_B">
+                            <h2 class="Wht">Project_Math()</h2>
+                        </div>
+                        
+                        <div class="Glass_Content Grid_C">
+
+                            <button class="Bubbles" onclick="JumpLink(0)">
+                                <h3>Read the Comic</h3>
+                            </button>
+
+                            <button class="Bubbles" id="CONTINUE">
+                                <h3>Continue</h3>
+                            </button>
+
+                            <button class="Bubbles" id="RESET">
+                                <h3>Reset</h3>
+                            </button>
+
+                        </div>
+
+                        <div class="Glass_Content Grid_D">
+                            <p></p>
+                        </div>
+                    </div>
+
                 </div>
 
-                <div id="News_1"></div>
+                <div class="Slider_Display Fire">
+                    <h1 class="Wht" >3 | <img src="Images/UI/Web_Game.svg" height="50" alt=""> Games</h1>
+                </div>
 
-                <div class="Spacer-100"></div>
+                <div class="Slider_Display Air">
+                    <h1 class="Wht" >4 | <img src="Images/UI/Web_Social.svg" height="50" alt=""> Forums</h1>
+                </div>
 
             </div>
-            
+
+            <!--{Dashboard_Buttons_Right}-->
+
+            <div id="DashBoard_Slider_Right">
+
+                <button class="Slider_Buttons" id="Fire">
+                    <h2 class="Rotate_90_degree">Games</h2>
+                </button>
+
+                <button class="Slider_Buttons" id="Air">
+                    <h2 class="Rotate_90_degree">Forums</h2>
+                </button>
+
+            </div>
+
         </div>
+        
+    </body>
 
-        <script src="Js/JS_tester.js"></script>
-        <script src="Js/Json_Comic.js"></script>
+    <script src="Js/Dashboard_Slider.js"></script>
 
-        <footer>
-            <h2 class="WhiteText V-Margin-25"> &#169; 2023 Project_Math() | All Rights reserve </h2>
-        </footer>
-    </Body>
+    <script src="Js/Content_Display.js"></script>
+    
+    <script src="Js/Json_Comic.js"></script>
+
+    <footer class="CENTER">
+        <h2 > &#169; 2023 Project_Math() | All Rights reserve </h2>
+    </footer>
 </html>
