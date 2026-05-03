@@ -5,12 +5,12 @@
 @font-face 
 {
     font-family: 'Frutiger';
-    src: url(Libraries/Frutiger/Frutiger.ttf);
+    src: url(../Libraries/Frutiger/Frutiger.ttf);
 }
 
 @font-face {
     font-family: 'Neuropol';
-    src: url(Libraries/Neuropol/Neuropol.otf);
+    src: url(../Libraries/Neuropol/Neuropol.ttf);
 }
 
 
