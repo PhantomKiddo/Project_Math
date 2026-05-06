@@ -54,6 +54,7 @@ function UpdatPage()
     
 
     Image.src = LocalData.Act_0[Page].Image;
+    Image.className = "Content_Card_Display";
     Image.style.width = "650px";
     Image.style.verticalAlign = "middle";
     

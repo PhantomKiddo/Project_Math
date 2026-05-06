@@ -5,12 +5,12 @@
 @font-face 
 {
     font-family: 'Frutiger';
-    src: url(Libraries/Frutiger/Frutiger.ttf);
+    src: url(../Libraries/Frutiger/Frutiger.ttf);
 }
 
 @font-face {
     font-family: 'Neuropol';
-    src: url(/Libraries/Neuropol/Neuropol.otf);
+    src: url(../Libraries/Neuropol/Neuropol.otf);
 }
 
 
@@ -170,7 +170,7 @@ p
 
 
     height: fit-content;
-    width: 100%;
+    
 
     padding: 15px;
 
@@ -231,19 +231,28 @@ p
 
     padding: 1vh;
     
+    border-style: none;
     border-radius: 25px;
 }
 
 .Content_Card_Display
 {
-    background-color: white;
-
-    width: fit-content;
-    height: fit-content;
 
     padding: 1vh;
 
     border-radius: 25px;
+}
+
+.Content_Card_StandardLayout
+{
+    height: 15vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 5px;
 }
 
 
@@ -252,20 +261,46 @@ p
 
 .Water
 {
+    background-image: url(../Images/Background/Aqua_Background.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    image-resolution: from-image 300dpi;
+
     background-color: #1919ff;
 }
 
 .Earth
 {
+    background-image: url(../Images/Background/Eco_Background.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    image-resolution: crisp-edges;
+
     background-color: #00c81e;
 }
 
 .Fire
 {
+    background-image: url(../Images/Background/Metro_Background.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    image-resolution: crisp-edges;
+
     background-color: #e60000;
 }
 
 .Air
 {
+    background: url(../Images/Background/Dorfic_Background.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    image-resolution: crisp-edges;
+
     background-color: #ff8c00;
+
+    
 }
