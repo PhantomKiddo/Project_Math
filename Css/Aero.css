@@ -10,7 +10,11 @@
 
 @font-face {
     font-family: 'Neuropol';
+<<<<<<< HEAD
     src: url(../Libraries/Neuropol/Neuropol.otf);
+=======
+    src: url(../Libraries/Neuropol/Neuropol.ttf);
+>>>>>>> 50cab4471fe74f98fc43299c3fd16a2732deacb5
 }
 
 
