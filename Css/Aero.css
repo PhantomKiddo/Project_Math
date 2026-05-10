@@ -10,11 +10,7 @@
 
 @font-face {
     font-family: 'Neuropol';
-<<<<<<< HEAD
     src: url(../Libraries/Neuropol/Neuropol.otf);
-=======
-    src: url(../Libraries/Neuropol/Neuropol.ttf);
->>>>>>> 50cab4471fe74f98fc43299c3fd16a2732deacb5
 }
 
 
@@ -93,7 +89,7 @@ h1
 {
     font-family: 'Neuropol', sans-serif;
 
-    font-size: 35px;
+    font-size: 5.5vh;
 
     margin: 0%;
 }
@@ -102,7 +98,7 @@ h2
 {
     font-family: 'Frutiger', sans-serif;
 
-    font-size: 20px;
+    font-size: 2.5vh;
 
     margin: 0%;
 }
@@ -111,7 +107,7 @@ h3
 {
     font-family: 'Frutiger', sans-serif;
 
-    font-size: 10px;
+    font-size: 1.5vh;
 
     margin: 0%;
 }
@@ -171,10 +167,10 @@ p
 {
     background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.5), transparent);
     
-
-
-    height: fit-content;
+    height: auto;
+    width: auto;
     
+
 
     padding: 15px;
 
@@ -196,7 +192,7 @@ p
     color: white;
 
     width: fit-content;
-    height: 100%;
+    height: fit-content;
 
     padding: 2.5%;
 
@@ -204,7 +200,7 @@ p
     
     border-radius: 15px;
 
-    /*backdrop-filter: blur(5px);*/
+    backdrop-filter: blur(5px);
 }
 
 .Bubbles:hover
@@ -249,7 +245,6 @@ p
 
 .Content_Card_StandardLayout
 {
-    height: 15vw;
 
     display: flex;
     flex-direction: column;
@@ -269,7 +264,6 @@ p
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    image-resolution: from-image 300dpi;
 
     background-color: #1919ff;
 }
@@ -280,7 +274,6 @@ p
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    image-resolution: crisp-edges;
 
     background-color: #00c81e;
 }
@@ -291,7 +284,6 @@ p
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    image-resolution: crisp-edges;
 
     background-color: #e60000;
 }
@@ -302,7 +294,6 @@ p
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    image-resolution: crisp-edges;
 
     background-color: #ff8c00;
 
