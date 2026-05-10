@@ -33,7 +33,9 @@ fetch(MainContent)
         Thumbnail.style.width = "75%";
         Thumbnail.style.padding = "auto";
 
+        Content_Card.setAttribute('onmouseenter', 'UIHover.play()');
         
+        Content_Card.setAttribute('onmousedown', 'if(event.button === 0) UIclick.play();');
 
         Content_Card.setAttribute('onclick', 'JumpLink(' + data.Act_0[i].Page + ')');
 
