@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="Eng">
+<html lang="Eng" id="Anchor">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,34 +19,35 @@
 
     <Body class="Background">
         
-        <header>
-            <h1>Project_Math(<img src="Images/UI/Web_Icon.svg" height="30" alt="">)</h1>
+        <header >
+            <img src="Images/UI/Project_Math().png" alt="Project_Math()" style="margin: 10px; width: 75vh;">
         </header>
 
         
 
-        <button class="Bubbles V-Margin-25" onclick="window.location.href='index.html'">  
-            <h2 class="WhiteText H-Margin-25">Back to Home</h2> 
+        <button onmouseenter="UIHover.play();" onmousedown="if(event.button === 0) UIclick.play();" class="Bubbles V-Margin-25" onclick="window.location.href='index.html'">  
+            <h2 class="WhiteText H-Margin-10">Back to Home</h2> 
         </button>
 
-        <div class="V-div-Ladder">
+
+        
+        <div class="V-div-Ladder" style="align-items: center;">
 
             <div class="Content_Card_Background">
-                <div id="Display">
-            
-                </div>
+
+                <div id="Display"></div>
 
                 <div class="Button_Layout">
-                    <button class="Bubbles Grid_A" id="PREVIOUS">
+                    <button onmouseenter="UIHover.play();" onmousedown="if(event.button === 0) UIclick.play();" class="Bubbles Grid_A" id="PREVIOUS">
                         <h2 class="H-Margin-25">Previous</h2>
                     </button>
-                    <button class="Bubbles Grid_B" id="SAVE">
+                    <button onmouseenter="UIHover.play();" onmousedown="if(event.button === 0) UIclick.play();" class="Bubbles Grid_B" id="SAVE">
                         <h2 class="H-Margin-25">Save</h2>
                     </button>
-                    <button class="Bubbles Grid_C" id="DIALOG">
+                    <button onmouseenter="UIHover.play();" onmousedown="if(event.button === 0) UIDialog.play();" class="Bubbles Grid_C" id="DIALOG">
                         <h2 class="H-Margin-25">Show Dialog</h2>
                     </button>
-                    <button class="Bubbles Grid_D" id="NEXT">
+                    <button onmouseenter="UIHover.play();" onmousedown="if(event.button === 0) UIclick.play();" class="Bubbles Grid_D" id="NEXT">
                         <h2 class="H-Margin-25">Next</h2>
                     </button>
                 </div>
@@ -60,6 +61,8 @@
         <div class="Spacer-100"></div>
         
         <script src="Js/Json_Comic.js"></script>
+
+        <script src="Js/AudioUI.js"></script>
 
         <footer class="CENTER">
             <h2 class="WhiteText V-Margin-25"> &#169; 2023 Project_Math() | All Rights reserve </h2>

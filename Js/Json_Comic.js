@@ -46,12 +46,13 @@ if (DIALOG_Btn) {
 
 function UpdatPage()
 {
+    
     var Image = document.createElement("img");
 
     if(PREVIOUS_Btn)PREVIOUS_Btn.style.visibility = Page === 0? "hidden" : "visible";
     if(NEXT_Btn)NEXT_Btn.style.visibility = Page === LocalData.Act_0.length - 1? "hidden" : "visible";
 
-    
+
 
     Image.src = LocalData.Act_0[Page].Image;
     Image.className = "Content_Card_Display";
@@ -96,6 +97,7 @@ fetch(ComicURL)
         {
             Page ++;
             localStorage.setItem("Page_Value", Page);
+            window.scrollTo(0, 0);
             window.location.reload()
 
             //console.log(Page);
@@ -108,6 +110,7 @@ fetch(ComicURL)
         {
             Page --;
             localStorage.setItem("Page_Value", Page);
+            window.scrollTo(0, 0);
             window.location.reload()
             
             //console.log(Page);

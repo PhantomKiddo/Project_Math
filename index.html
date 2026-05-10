@@ -14,7 +14,7 @@
     </head>
 
     <header>
-        <img src="Images/UI/Project_Math().png" width="500" alt="Project_Math()">
+        <img src="Images/UI/Project_Math().png" alt="Project_Math()" style="margin: 10px; width: 75vh;">
     </header>
 
     <body class="Background">
@@ -25,11 +25,11 @@
 
             <div id="DashBoard_Slider_Left">
 
-                <button class="Slider_Buttons" id="Water">
+                <button onmouseenter="UIHover.play();" onclick="Woosh();" class="Slider_Buttons" id="Water">
                     <h2 class="Rotate_90_degree">Library</h2>
                 </button>
 
-                <button class="Slider_Buttons"  id="Earth">
+                <button onmouseenter="UIHover.play();" onclick="Woosh();" class="Slider_Buttons"  id="Earth">
                     <h2 class="Rotate_90_degree">Comic</h2>
                 </button>
 
@@ -55,35 +55,48 @@
 
                     <div class="Comic">
 
-                        <div class="Content_Card_Background Grid_A">
+                        <div class="Content_Card_Background">
+
                             <img src ="Images/Comic/Act-0_Page-0.png"  width="250" class="Content_Card_Display">
                                 
-                        </img>
                         </div>
 
-                        <div class="Glass_Content Grid_B">
-                            <h2 class="Wht">Project_Math()</h2>
+                        <div class="V-div-Ladder" style="gap: 10px;">
+                            
+                            <div class="Glass_Content">
+                                <h2 class="Wht">Project_Math()</h2>
+                            </div>
+                            
+                            <div class="Glass_Content H-div-Tracks CENTER" style="gap: 15px;">
+
+                                <button onmouseenter="UIHover.play();" onmousedown="if(event.button === 0) UIclick.play();" class="Bubbles" onclick="JumpLink(0)">
+                                    <h2>Read the Comic</h2>
+                                </button>
+
+                                <button onmouseenter="UIHover.play();" onmousedown="if(event.button === 0) UIclick.play();" class="Bubbles" id="CONTINUE">
+                                    <h2>Continue</h2>
+                                </button>
+
+                                <button onmouseenter="UIHover.play();" onmousedown="if(event.button === 0) UIclick.play();" class="Bubbles" id="RESET">
+                                    <h2>Reset</h2>
+                                </button>
+
+                            </div>
+
+                            <div class="Glass_Content">
+                                <p>
+                                    Lorem ipsum dolor sit, 
+                                    amet consectetur adipisicing elit. 
+                                    Neque praesentium modi quas officia, 
+                                    commodi distinctio ipsum nesciunt sed. 
+                                    Sint explicabo, nostrum error placeat nobis laboriosam! 
+                                    Pariatur autem incidunt adipisci dignissimos.
+                                </p>
+                            </div>
+
                         </div>
+
                         
-                        <div class="Glass_Content Grid_C">
-
-                            <button class="Bubbles" onclick="JumpLink(0)">
-                                <h3>Read the Comic</h3>
-                            </button>
-
-                            <button class="Bubbles" id="CONTINUE">
-                                <h3>Continue</h3>
-                            </button>
-
-                            <button class="Bubbles" id="RESET">
-                                <h3>Reset</h3>
-                            </button>
-
-                        </div>
-
-                        <div class="Glass_Content Grid_D">
-                            <p></p>
-                        </div>
                     </div>
 
                 </div>
@@ -102,11 +115,11 @@
 
             <div id="DashBoard_Slider_Right">
 
-                <button class="Slider_Buttons" id="Fire">
+                <button onmouseenter="UIHover.play();" onclick="Woosh();" class="Slider_Buttons" id="Fire">
                     <h2 class="Rotate_90_degree">Games</h2>
                 </button>
 
-                <button class="Slider_Buttons" id="Air">
+                <button onmouseenter="UIHover.play();" onclick="Woosh();" class="Slider_Buttons" id="Air">
                     <h2 class="Rotate_90_degree">Forums</h2>
                 </button>
 
@@ -121,6 +134,8 @@
     <script src="Js/Content_Display.js"></script>
     
     <script src="Js/Json_Comic.js"></script>
+
+    <script src="Js/AudioUI.js"></script>
 
     <footer class="CENTER">
         <h2 > &#169; 2023 Project_Math() | All Rights reserve </h2>
